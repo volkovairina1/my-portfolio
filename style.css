@@ -1,3 +1,193 @@
-body { font-family: Arial; max-width: 600px; margin: 40px auto; }
-h1 { color: #2c3e50; }
-li { margin: 8px 0; }
+/* Базовые настройки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Общие заголовки */
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+section {
+    margin-bottom: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+/* --- Блок ОБО МНЕ --- */
+.about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-top: none;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* --- Блок НАВЫКИ --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* --- Блок ПРИМЕРЫ РАБОТ --- */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.work-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-item h3 {
+    margin-bottom: 10px;
+}
+
+.work-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+/* --- Блок КОНТАКТЫ --- */
+.contacts-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.qr-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #999;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 2px dashed #ccc;
+}
+
+.contact-card p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Адаптив под телефоны */
+@media (max-width: 768px) {
+    h1 { font-size: 40px; }
+    .about { flex-direction: column; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .works-grid { grid-template-columns: 1fr; }
+    .contacts-grid { justify-content: center; }
+}
+.qr-img {
+    width: 120px;       /* Ширина картинки */
+    height: 120px;      /* Высота картинки */
+    object-fit: contain; /* Чтобы картинка не искажалась */
+    margin-bottom: 10px; /* Отступ снизу до подписи */
+    border-radius: 12px; /* Скругленные углы (по желанию) */
+}

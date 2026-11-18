@@ -2,16 +2,108 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мое портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Волкова Ирина</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Волкова Ирина Андреевна</h1>
-    <p>Навыки: HTML, CSS, Git</p>
-    <ul>
-        <li>Верстка страниц</li>
-        <li>Настройка GitHub Pages</li>
-        <li>Работа с DNS-записями</li>
-    </ul>
+
+    <div class="container">
+        <section class="about">
+            <div class="about-text">
+                <h1>ОБО МНЕ</h1>
+                <h2>Волкова Ирина</h2>
+                <p class="subtitle">Разработчик сайтов</p>
+                <p class="description">
+                    Я студентка РГУ им. А. Н. Косыгина направления «Информационные технологии и дизайн». Проектирую веб- и мобильные интерфейсы.
+                <div class="facts">
+                    <div class="fact-item">✦ до 1 года проектного опыта</div>
+                    <div class="fact-item">✦ English Upper-Intermediate / B2</div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/profile.jpg">
+            </div>
+        </section>
+
+        <section class="skills">
+            <h1>НАВЫКИ</h1>
+            <p class="subtitle">Soft skills / Hard skills</p>
+            <p class="description">Умею структурировать задачи, работать с обратной связью и доводить проекты до результата. Внимательна к деталям, быстро адаптируюсь к новым инструментам и ищу понятные пользователю и команде решения.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>UX/UI</h3>
+                    <p>Figma</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Research</h3>
+                    <p>Интервью, анализ конкурентов</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, GitHub Pages</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Visual</h3>
+                    <p>Photoshop, Illustrator.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Motion / 3D</h3>
+                    <p>After Effects, CupCat, Blender</p>
+                </div>
+                <div class="skill-card">
+                    <h3>AI tools</h3>
+                    <p>ChatGPT, Gemini, DeepSeek</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h1>ПРИМЕРЫ РАБОТ</h1>
+            
+            <div class="works-grid">
+                <div class="work-item">
+                    <h3>Верстка сайта</h3>
+                    <p>Проект по верстке страницы с таблицей сезонов и галереей персонажей.</p>
+                    <img src="images/work1.jpg">
+                </div>
+
+                <div class="work-item">
+                    <h3>UI Космическая анкета</h3>
+                    <p>Разработка формы регистрации со стильным дизайном.</p>
+                    <img src="images/work2.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h1>КОНТАКТЫ</h1>
+            <p class="subtitle">Буду рада обсудить проекты, стажировки и возможности сотрудничества.</p>
+            
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <img src="images/qr1.png" alt="QR Портфолио" class="qr-img">
+                    <p>Портфолио</p>
+                </div>
+                <div class="contact-card">
+                    <img src="images/qr2.png" alt="QR Telegram" class="qr-img">
+                    <p>Telegram</p>
+                </div>
+                <div class="contact-card">
+                    <img src="images/qr3.png" alt="QR Почта" class="qr-img">
+                    <p>Почта</p>
+                </div>
+                <div class="contact-card">
+                    <img src="images/qr4.png" alt="QR GitHub" class="qr-img">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
